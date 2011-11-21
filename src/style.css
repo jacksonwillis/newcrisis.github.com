@@ -59,15 +59,22 @@ section {
     height: 100px;
     font-family: sans-serif;
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-left: 1em;
     border: 0;
-    line-height: 1em;
-    text-align: center; }
-  #newgame #choice-1, #newgame #choice-4 {
+    line-height: 1em; }
+    #newgame div em, #newgame div a {
+      display: block; }
+    #newgame div a:link, #newgame div a:visited {
+      color: white;
+      font-size: 125%; }
+    #newgame div em {
+      margin-top: 0.5em; }
+  #newgame .choice-1, #newgame .choice-4 {
     background: #333333; }
-  #newgame #choice-2, #newgame #choice-3 {
+  #newgame .choice-2, #newgame .choice-3 {
     background: #666666; }
-  #newgame #choice-1, #newgame #choice-3 {
+  #newgame .choice-1, #newgame .choice-3 {
     float: right; }
 
 .github {

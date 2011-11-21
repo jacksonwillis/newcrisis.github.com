@@ -64,15 +64,22 @@ section
 		height: $height / 4
 		font-family: sans-serif
 		color: white
-		padding-top: $width / 8
+		padding-top: $width / 16
+		padding-left: 1em
 		border: 0
 		line-height: 1em
-		text-align: center
-	#choice-1, #choice-4
+		em, a
+			display: block
+		a:link, a:visited
+			color: white
+			font-size: 125%
+		em
+			margin-top: 0.5em
+	.choice-1, .choice-4
 		background: #333
-	#choice-2, #choice-3
+	.choice-2, .choice-3
 		background: #666
-	#choice-1, #choice-3
+	.choice-1, .choice-3
 		float: right
 
 .github

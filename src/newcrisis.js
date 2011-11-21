@@ -6,7 +6,7 @@ document.observe("dom:loaded", function() {
     _results = [];
     for (i = 1; i <= 4; i++) {
       _results.push($("choice-" + i).observe('click', function(e) {
-	window.location.hash = Event.element(e).id.split('choice-')[1];
+	window.location.hash = i;//Event.element(e).id.split('choice-')[1];
         newGame();
       }));
     }
