@@ -43,7 +43,7 @@ section {
   z-index: 1; }
   #newgame div {
     z-index: 2;
-    width: 800px;
+    width: 400px;
     height: 200px; }
     #newgame div p {
       font-family: sans-serif;
