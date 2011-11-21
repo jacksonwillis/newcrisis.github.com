@@ -19,7 +19,7 @@ puts "Render complete! (#{$r.to_s.ljust(4)})\e[1F"
 end
 
 if __FILE__ == $0 && (/-l|--loop/.match ARGV.join(' '))
-  loop { render_files }
+  loop { render_files; sleep 2 }
 else
   render_files
 end

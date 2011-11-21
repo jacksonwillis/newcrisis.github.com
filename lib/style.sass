@@ -10,6 +10,16 @@ body
 	width: $width
 	text-align: left
 	font-size: $font_size
+	background: black
+	color: lighten(green, 25%)
+	font-family: monospace
+
+header
+	h1
+		margin: 0.5em 0
+	h2
+		font-size: 12px
+		line-height: 1em
 
 section
 	display: block
@@ -17,11 +27,12 @@ section
 #newcrisis
 	width: $width
 	height: $height
-	border: 4px solid black
+	border: 4px solid #333
+	background: white
 
 #status
 	float: left
-	width: $width / 2
+	width: $width / 4
 	height: $height - $info_height
 	border-right: 1px solid black
 
@@ -34,6 +45,7 @@ section
 	width: $width
 	border-top: 1px solid black
 	overflow-y: scroll
+	color: black
 	pre
 		margin-top: -0.5em
 		padding: 1em
@@ -43,25 +55,24 @@ section
 	width: $width
 	height: $height
 	position: relative
-	top: ($height * -1 - 1)
+	top: (-$height - 1)
 	z-index: 1
 	div
+		margin: 0 !important
 		z-index: 2
 		width: $width / 2
-		height: $height / 2
-		p
-			font-family: sans-serif
-			color: white
-			margin: 0
-			padding-top: $height / 4 - $font_size
-			line-height: 1em
-			text-align: center
-
-	.choice-1, .choice-4
+		height: $height / 4
+		font-family: sans-serif
+		color: white
+		padding-top: $width / 8
+		border: 0
+		line-height: 1em
+		text-align: center
+	#choice-1, #choice-4
 		background: #333
-	.choice-2, .choice-3
+	#choice-2, #choice-3
 		background: #666
-	.choice-1, .choice-3
+	#choice-1, #choice-3
 		float: right
 
 .github
