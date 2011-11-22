@@ -7,7 +7,7 @@ flash = function(s) {
 var pharisses, sadducees, monastics, zealots, sadduceesLose, runningOutOfTime;
 
 pharisses = function () {
-  
+  $("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(http://i.imgur.com/yu3t7.png)';
 }
 
 sadducees = function () {
@@ -65,8 +65,8 @@ monasticsLose = function (){
 $("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(src/img/monastics-lose.png)';
 }
 
-rebels = function () {
-
+zealots = function () {
+  $("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(http://i.imgur.com/yu3t7.png)';
 }
 
 newGame = function(mode) {
