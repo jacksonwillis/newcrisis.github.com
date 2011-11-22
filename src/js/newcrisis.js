@@ -33,11 +33,11 @@ var prayers=0;
 var pray;
 
 pray = function () {
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/qanJs.jpg');", 25);
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/WGgyA.jpg');", 50);
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/PXtMQ.jpg');", 75);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/qanJs.jpg');", 50);
 setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/WGgyA.jpg');", 100);
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/qanJs.jpg');", 125);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/PXtMQ.jpg');", 150);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/WGgyA.jpg');", 200);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/qanJs.jpg');", 250);
 
   prayers +=1;
   if(prayers >= 50) {
