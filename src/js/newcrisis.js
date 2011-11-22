@@ -24,7 +24,7 @@ sadduceesLose = function(){
 
 monastics = function () {
   $('action').innerHTML = "<span class='running'>Time left: <span id='timeleft'>40</span></span>";
-$('action').innerHTML += "<img src='src/img/pray-1.png' id='prayer'>";
+$('action').innerHTML += "<img src='http://i.imgur.com/qanJs.jpg' id='prayer'>";
   setInterval(runningOutOfTime, 500);
   $('status').innerHTML = "<button onclick='pray();' class='pray bb'>Pray!</button>";
 }
