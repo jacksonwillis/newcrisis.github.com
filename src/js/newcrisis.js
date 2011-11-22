@@ -33,11 +33,11 @@ var prayers=0;
 var pray;
 
 pray = function () {
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/zoUVW.png');", 25);
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/N1ekf.png');", 50);
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/4x51L.png');", 75);
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/N1ekf.png');", 100);
-setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/zoUVW.png');", 125);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/qanJs.jpg');", 25);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/WGgyA.jpg');", 50);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/PXtMQ.jpg');", 75);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/WGgyA.jpg');", 100);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/qanJs.jpg');", 125);
 
   prayers +=1;
   if(prayers >= 50) {
@@ -62,7 +62,7 @@ $("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(src/img/mo
 }
 
 monasticsLose = function (){
-$("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(src/img/monastics-win.png)';
+$("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(src/img/monastics-lose.png)';
 }
 
 rebels = function () {
