@@ -30,6 +30,13 @@ section {
   width: 200px;
   height: 300px;
   border-right: 1px solid black; }
+  #status .diss {
+    margin: 0.5em;
+    height: 270px;
+    width: 170px;
+    font-size: 200%;
+    color: red;
+    font-family: monospace; }
 
 #action {
   width: 800px;
