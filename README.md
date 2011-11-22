@@ -5,7 +5,12 @@ Instructions
 ------------
 
 *    Sadducees level
+
      Don't push the button
+
+*    Monastics level
+
+     Pray 50 times before the time limit
 
 Technologies used
 -----------------

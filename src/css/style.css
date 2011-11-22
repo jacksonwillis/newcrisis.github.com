@@ -30,17 +30,22 @@ section {
   width: 200px;
   height: 300px;
   border-right: 1px solid black; }
-  #status .diss {
+  #status .bb {
     margin: 0.5em;
     height: 270px;
     width: 170px;
-    font-size: 200%;
+    font-size: 200%; }
+  #status .diss {
     color: red;
     font-family: monospace; }
+  #status .pray {
+    color: blue;
+    font-family: serif; }
 
 #action {
   width: 800px;
-  height: 300px; }
+  height: 300px;
+  color: black !important; }
 
 #info {
   height: 100px;

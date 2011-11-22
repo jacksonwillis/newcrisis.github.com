@@ -4,14 +4,14 @@ flash = function(s) {
   $('flash').innerHTML = s + "\n" + $('flash').innerHTML;
 }
 
-var pharisses, sadducees, monastics, zealots, sadduceesLose;
+var pharisses, sadducees, monastics, zealots, sadduceesLose, runningOutOfTime;
 
 pharisses = function () {
   
 }
 
 sadducees = function () {
-  $('status').innerHTML = "<button onclick='sadduceesLose();' class='diss'>Diss the Romans</button>";
+  $('status').innerHTML = "<button onclick='sadduceesLose();' class='diss bb'>Diss the Romans</button>";
   $('action').innerHTML += "<img src='src/img/you.png' id='you'>";
 }
 
@@ -23,7 +23,42 @@ sadduceesLose = function(){
 }
 
 monastics = function () {
+  $('action').innerHTML = "<span class='running'>Time left: <span id='timeleft'>40</span></span>";
+$('action').innerHTML += "<img src='src/img/pray-1.png' id='prayer'>";
+  setInterval(runningOutOfTime, 500);
+  $('status').innerHTML = "<button onclick='pray();' class='pray bb'>Pray!</button>";
+}
 
+var prayers=0;
+var pray;
+
+pray = function () {
+setTimeout("$('prayer').setAttribute('src', 'src/img/pray-2.png');", 63);
+setTimeout("$('prayer').setAttribute('src', 'src/img/pray-1.png');", 125);
+  prayers +=1;
+  if(prayers >= 50) {
+    monasticsWin();
+  }
+ flash('Prayer points: ' + prayers);
+}
+
+runningOutOfTime = function () {
+  var time=parseInt($('timeleft').innerHTML);
+  if(time <= 0) {
+    if(prayers < 50) {monasticsLose();}
+    else { monasticsWin(); }
+  }
+  $('timeleft').innerHTML = time - 1;
+}
+
+var monasticsWin, monasticsLose;
+
+monasticsWin = function(){
+$("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(src/img/monastics-win.png)';
+}
+
+monasticsLose = function (){
+$("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(src/img/monastics-win.png)';
 }
 
 rebels = function () {
