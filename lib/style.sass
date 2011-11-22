@@ -11,12 +11,12 @@ body
 	text-align: left
 	font-size: $font_size
 	background: black
-	color: lighten(green, 25%)
+	color: white //lighten(green, 25%)
 	font-family: monospace
 
 header
 	h1
-		margin: 0.5em 0
+		margin: 0.5em 0 -0.5em 0
 	h2
 		font-size: 12px
 		line-height: 1em
@@ -63,22 +63,25 @@ section
 		width: $width / 2
 		height: $height / 4
 		font-family: sans-serif
-		color: white
-		padding-top: $width / 16
+		color: #aaa
+		padding-top: $width / 32
+		padding-bottom: $width / 32
 		padding-left: 1em
 		border: 0
 		line-height: 1em
-		em, a
+		em
 			display: block
 		a:link, a:visited
 			color: white
 			font-size: 125%
+		a, em
+			color: white
 		em
-			margin-top: 0.5em
+			margin-top: 1em
 	.choice-1, .choice-4
-		background: #333
+		background: #555
 	.choice-2, .choice-3
-		background: #666
+		background: #333
 	.choice-1, .choice-3
 		float: right
 

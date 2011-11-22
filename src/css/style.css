@@ -7,11 +7,11 @@ body {
   text-align: left;
   font-size: 15px;
   background: black;
-  color: lime;
+  color: white;
   font-family: monospace; }
 
 header h1 {
-  margin: 0.5em 0; }
+  margin: 0.5em 0 -0.5em 0; }
 header h2 {
   font-size: 12px;
   line-height: 1em; }
@@ -58,22 +58,25 @@ section {
     width: 400px;
     height: 100px;
     font-family: sans-serif;
-    color: white;
-    padding-top: 50px;
+    color: #aaaaaa;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 1em;
     border: 0;
     line-height: 1em; }
-    #newgame div em, #newgame div a {
+    #newgame div em {
       display: block; }
     #newgame div a:link, #newgame div a:visited {
       color: white;
       font-size: 125%; }
+    #newgame div a, #newgame div em {
+      color: white; }
     #newgame div em {
-      margin-top: 0.5em; }
+      margin-top: 1em; }
   #newgame .choice-1, #newgame .choice-4 {
-    background: #333333; }
+    background: #555555; }
   #newgame .choice-2, #newgame .choice-3 {
-    background: #666666; }
+    background: #333333; }
   #newgame .choice-1, #newgame .choice-3 {
     float: right; }
 
