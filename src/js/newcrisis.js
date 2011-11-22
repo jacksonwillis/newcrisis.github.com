@@ -33,8 +33,9 @@ var prayers=0;
 var pray;
 
 pray = function () {
-setTimeout("$('prayer').setAttribute('src', 'src/img/pray-2.png');", 63);
-setTimeout("$('prayer').setAttribute('src', 'src/img/pray-1.png');", 125);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/zoUVW.png');", 50);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/N1ekf.png');", 100);
+setTimeout("$('prayer').setAttribute('src', 'http://i.imgur.com/4x51L.png');", 150);
   prayers +=1;
   if(prayers >= 50) {
     monasticsWin();
