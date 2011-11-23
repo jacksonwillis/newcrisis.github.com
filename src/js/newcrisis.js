@@ -57,6 +57,7 @@ setTimeout("$('prayer').style.left = 0;", 500);
  flash('Prayer points: ' + prayers);
 }
 
+<<<<<<< HEAD
 var throwRock, stab, zealotHP, romanHP, acting;
 zealotHP = 100;
 romanHP = 50;
@@ -68,11 +69,17 @@ acting = true;
 flash('You threw a rock.');
 romanHP -= 9;
 $('romanHP').innerHTML = romanHP;
+=======
+var throwRock;
+
+throwRock = function () {
+>>>>>>> dd6a47e7bf510fe132fc181f20d375f07923d21c
 setTimeout("$('zealot').setAttribute('src', 'src/img/zealot-throw-1.png');", 50);
 setTimeout("$('zealot').setAttribute('src', 'src/img/zealot-return.png');", 100);
 setTimeout("$('zealot').setAttribute('src', 'src/img/zealot-throw-2.png');", 150);
 setTimeout("$('zealot').setAttribute('src', 'src/img/zealot-throw-3.png');", 200);
 setTimeout("$('zealot').setAttribute('src', 'src/img/zealot-return.png');", 500);
+<<<<<<< HEAD
 setTimeout("flash('Roman (' + romanHP + 'HP) took 9 damage.');", 500);
 setTimeout("acting=false;", 500);
 }
@@ -91,6 +98,10 @@ setTimeout("$('zealot').setAttribute('src', 'src/img/zealot-return.png');", 133)
 setTimeout("flash('Roman (' + romanHP + 'HP) took 4 damage.');", 133);
 setTimeout("acting=false;", 150);
 }
+=======
+
+ flash('You threw a rock.');
+>>>>>>> dd6a47e7bf510fe132fc181f20d375f07923d21c
 }
 
 runningOutOfTime = function () {
@@ -113,16 +124,21 @@ $("newcrisis").innerHTML = ""; $("newcrisis").style.background = 'url(src/img/mo
 }
 
 zealots = function () {
+<<<<<<< HEAD
 setInterval('romanStab();', 500)
 $('action').innerHTML += "<div id='HPbox'><div id='romanHPbox'>Roman (<span id='romanHP'>50</span>HP)</div><div id='zealotHPbox'>You (<span id='zealotHP'>100</span>HP)</div>";
 $('action').innerHTML += "<img src='src/img/zealot-return.png' id='zealot'>";
 $('action').innerHTML += "<img src='src/img/spqr-return-1.png' id='spqr'>";
+=======
+$('action').innerHTML += "<img src='src/img/zealot-return.png' id='zealot'>";
+>>>>>>> dd6a47e7bf510fe132fc181f20d375f07923d21c
 
   $("status").innerHTML += "<button onclick='throwRock();' id='rock' class='tb'>Throw rock</button>";
   $("status").innerHTML += "<button onclick='stab();' id='stab' class='tb'>Stab</button>";
   $("status").innerHTML += "<button onclick='surrender();' id='surrender' class='tb'>Surrender</button>";
 }
 
+<<<<<<< HEAD
 var romanStab;
 
 romanStab = function() {
@@ -144,6 +160,8 @@ $("newcrisis").innerHTML = "";
 $("newcrisis").style.background = 'url(src/img/zealot-surrender.png)';
 }
 
+=======
+>>>>>>> dd6a47e7bf510fe132fc181f20d375f07923d21c
 newGame = function(mode) {
   $('newgame').hide();
   if(mode == '1') { flash('You have joined the Sadducees.'); sadducees(); }

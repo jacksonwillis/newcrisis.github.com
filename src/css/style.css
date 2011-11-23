@@ -30,8 +30,11 @@ section {
   width: 200px;
   height: 300px;
   border-right: 1px solid black; }
+<<<<<<< HEAD
   #status button {
     z-index: 4; }
+=======
+>>>>>>> dd6a47e7bf510fe132fc181f20d375f07923d21c
   #status .bb, #status .hb, #status .tb {
     margin: 0.5em;
     height: 270px;
@@ -63,6 +66,7 @@ section {
   width: 800px;
   height: 300px;
   color: black !important; }
+<<<<<<< HEAD
   #action #zealot, #action #spqr, #action #HPbox, #action #fightbox {
     position: relative; }
   #action #zealot {
@@ -76,6 +80,8 @@ section {
     height: 100px; }
     #action #HPbox div {
       padding: 50px; }
+=======
+>>>>>>> dd6a47e7bf510fe132fc181f20d375f07923d21c
 
 #info {
   height: 100px;
