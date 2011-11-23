@@ -1,0 +1,66 @@
+%html
+  %head
+    %title New Crisis
+    %link(rel='stylesheet' type='text/css' href='src/css/style.css')
+    %script(src='src/js/prototype.js')  
+    %script(src='src/js/newcrisis.js')
+  %body
+    %header
+      %h1 New Crisis
+      %h2
+        A web-based game based on the Second Temple period of Jewish history. (
+        %a(href='https://github.com/NewCrisis/newcrisis.github.com/blob/master/README.md#readme')instructions
+        ) (
+        %a(href='index.html')new game
+        )
+
+      %a(href='http://github.com/newcrisis/newcrisis.github.com')
+        %img.github(src='src/img/github-banner.png' alt='Fork me on GitHub')
+
+    %section#newcrisis
+      %section#status
+
+      %section#action
+
+      %section#info
+        %pre#flash
+          Welcome to the New Crisis game. Choose your faction.
+
+      %section#newgame
+        %div.choice-1
+          %p
+            %a#choice-1(href='javascript:newGame(1);') Sadducees
+            Rome-supported authority<br>
+            Wanted to maintain status quo.
+            %em Objective:
+            Don't say anything bad about the Romans.
+
+        %div.choice-2
+          %p
+            %a#choice-1(href='javascript:newGame(2);') Pharisses
+            Reformists, wandering teachers<br>
+            Wanted to reinterpret Judaism to be more modern.
+            %em Objective:
+            Gain followers; avoid Roman gov't
+
+        %div.choice-3
+          %p
+            %a#choice-3(href='javascript:newGame(3);') Monastics
+            Religious communists<br>
+            Wanted to self-purify to prepare for divine liberation.
+            %em Objective:
+            Gain 50+ Prayer Points
+
+        %div.choice-4
+          %p
+            %a#choice-4(href='javascript:newGame(4);') Zealots
+            Rebels!<br>
+            Wanted to violently resist Roman control.
+            %em Objective:
+            Defeat Romans in battle
+
+    %footer
+      %p
+        Jackson Willis 2011 (
+        %a(href='https://github.com/NewCrisis/newcrisis.github.com/blob/master/') license
+        )

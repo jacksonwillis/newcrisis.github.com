@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>New Crisis</title>
+    <link href='src/css/style.css' rel='stylesheet' type='text/css'>
+    <script src='src/js/prototype.js'></script>
+    <script src='src/js/newcrisis.js'></script>
+  </head>
+  <body>
+    <header>
+      <h1>New Crisis</h1>
+      <h2>
+        A web-based game based on the Second Temple period of Jewish history. (
+        <a href='https://github.com/NewCrisis/newcrisis.github.com/blob/master/README.md#readme'>instructions</a>
+        ) (
+        <a href='index.html'>new game</a>
+        )
+      </h2>
+      <a href='http://github.com/newcrisis/newcrisis.github.com'>
+        <img alt='Fork me on GitHub' class='github' src='src/img/github-banner.png'>
+      </a>
+    </header>
+    <section id='newcrisis'>
+      <section id='status'></section>
+      <section id='action'></section>
+      <section id='info'>
+        <pre id='flash'>Welcome to the New Crisis game. Choose your faction.</pre>
+      </section>
+      <section id='newgame'>
+        <div class='choice-1'>
+          <p>
+            <a href='javascript:newGame(1);' id='choice-1'>Sadducees</a>
+            Rome-supported authority<br>
+            Wanted to maintain status quo.
+            <em>Objective:</em>
+            Don't say anything bad about the Romans.
+          </p>
+        </div>
+        <div class='choice-2'>
+          <p>
+            <a href='javascript:newGame(2);' id='choice-1'>Pharisses</a>
+            Reformists, wandering teachers<br>
+            Wanted to reinterpret Judaism to be more modern.
+            <em>Objective:</em>
+            Gain followers; avoid Roman gov't
+          </p>
+        </div>
+        <div class='choice-3'>
+          <p>
+            <a href='javascript:newGame(3);' id='choice-3'>Monastics</a>
+            Religious communists<br>
+            Wanted to self-purify to prepare for divine liberation.
+            <em>Objective:</em>
+            Gain 50+ Prayer Points
+          </p>
+        </div>
+        <div class='choice-4'>
+          <p>
+            <a href='javascript:newGame(4);' id='choice-4'>Zealots</a>
+            Rebels!<br>
+            Wanted to violently resist Roman control.
+            <em>Objective:</em>
+            Defeat Romans in battle
+          </p>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <p>
+        Jackson Willis 2011 (
+        <a href='https://github.com/NewCrisis/newcrisis.github.com/blob/master/'>license</a>
+        )
+      </p>
+    </footer>
+  </body>
+</html>

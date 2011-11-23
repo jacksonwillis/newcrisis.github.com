@@ -1,0 +1,140 @@
+$width: 800px
+$height: 400px
+$info_height: 100px
+$font_size: 15px
+
+html
+	text-align: center
+body
+	margin: auto
+	width: $width
+	text-align: left
+	font-size: $font_size
+	background: black
+	color: white //lighten(green, 25%)
+	font-family: monospace
+
+header
+	h1
+		margin: 0.5em 0 -0.5em 0
+	h2
+		font-size: 12px
+		line-height: 1em
+
+section
+	display: block
+
+#newcrisis
+	width: $width
+	height: $height
+	border: 4px solid #222
+	background: white
+
+#status
+	float: left
+	width: $width / 4
+	height: $height - $info_height
+	border-right: 1px solid black
+	button
+		z-index: 4
+	.bb, .hb, .tb
+		margin: 0.5em
+		height: $height - $info_height - $font_size * 2
+		width: $width / 4 - $font-size * 2
+		//background: black
+		font-size: 200%
+	.hb
+		//half button
+		height: ($height - $info_height) / 2 - $font_size * 2
+	.tb
+		//third button
+		margin: 0.25em
+		width: $width / 4 - $font-size
+		height: ($height - $info_height) / 3 - $font_size
+	.diss
+		color: red
+		font-family: monospace
+	.pray
+		color: blue
+		font-family: serif
+	#rock, #stab
+		font-weight: bold
+	#surrender
+		color: black
+		background: #F5F5DC
+		border: 0.33em solid darken(#F5F5DC, 5%)
+		font-family: "Comic Sans", "Comic Sans MS", sans-serif
+	.surrender:hover
+		border-color: darken(#F5F5DC, 15%)
+
+#action
+	width: $width
+	height: $height - $info_height
+	color: black !important
+	#zealot, #spqr, #HPbox, #fightbox
+		position: relative
+	#zealot
+		//top: 100px
+		left: 75
+	#spqr
+		top: -100px
+		left: -125px
+	#fightbox
+		//top: -100px
+	#HPbox
+		left: 350px
+		top: 0
+		height: 100px
+		div
+			padding: 50px
+
+#info
+	height: $info_height
+	width: $width
+	border-top: 1px solid black
+	overflow-y: scroll
+	color: black
+	pre
+		margin-top: -0.5em
+		padding: 1em
+		text-align: left
+			
+#newgame
+	width: $width
+	height: $height
+	position: relative
+	top: (-$height - 1)
+	z-index: 1
+	div
+		margin: 0 !important
+		z-index: 2
+		width: $width / 2
+		height: $height / 4
+		font-family: sans-serif
+		color: #aaa
+		padding-top: $width / 32
+		padding-bottom: $width / 32
+		padding-left: 1em
+		border: 0
+		line-height: 1em
+		em
+			display: block
+		a:link, a:visited
+			color: white
+			font-size: 125%
+		a, em
+			color: white
+		em
+			margin-top: 1em
+	.choice-1, .choice-4
+		background: #555
+	.choice-2, .choice-3
+		background: #333
+	.choice-1, .choice-3
+		float: right
+
+.github
+	position: absolute
+	top: 0
+	right: 0
+	border: 0
